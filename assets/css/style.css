@@ -1,0 +1,144 @@
+:root {
+  --main-bg-color: #f2f1f1;
+  --secondary-bg-color: #3e3e3e;
+  --tertiary-bg-color: #d9d9d9;
+  --main-text-color: #3e3e3e;
+  --secondary-text-color: #0abc5c;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: "Poppins", sans-serif;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 0;
+  padding: 15px;
+  color: var(--main-text-color);
+  font-weight: bold;
+}
+
+.flow {
+  color: var(--secondary-text-color);
+  position: absolute;
+  top: 60px;
+}
+
+.bg-img {
+  height: 100vh;
+  background: url(../images/listening.jpeg);
+  background-size: cover;
+  background-position: 10% 50%;
+  background-repeat: no-repeat;
+}
+
+.display-all {
+  background-color: var(--tertiary-bg-color);
+  border-radius: 25px;
+  padding-bottom: 125px;
+  padding-top: 10px;
+  margin-top: 100px;
+}
+
+.input-group-append {
+  margin-top: 10px;
+}
+
+.secondBackground {
+  display: block;
+  height: 100vh;
+  width: auto;
+  background-color: var(--secondary-bg-color);
+}
+
+.btn {
+  background-color: var(--secondary-bg-color);
+  border: 2px solid var(--secondary-text-color);
+  border-radius: 25px;
+  color: var(--secondary-text-color);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--secondary-text-color);
+  color: var(--main-text-color);
+}
+
+.cta {
+  font-size: 4em;
+  font-weight: bold;
+  color: var(--secondary-text-color);
+}
+
+.cta-container {
+  top: 25vh;
+}
+
+.sign-in {
+  width: 150px;
+  height: 50px;
+  font-size: 16pt;
+}
+
+.current {
+  font-size: 16pt;
+}
+
+.list-group:hover {
+  cursor: pointer;
+}
+
+#icon img {
+  width: 70px;
+  image-rendering: crisp-edges;
+}
+
+#song-list {
+  background-color: var(--secondary-bg-color);
+  color: white;
+  margin-top: 100px;
+}
+
+#song-list-item {
+  display: flex;
+  border-bottom: black solid 1px;
+  margin: 0;
+  padding: 10px 0;
+}
+#song-list-item img {
+  height: 100px;
+}
+#song-name {
+  font-size: x-large;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 110px;
+}
+#artist-name {
+  position: relative;
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 110px;
+}
+#play-pause {
+  height: 75px;
+  border-radius: 25%;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 450px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 820px) {
+  body {
+    margin: 20px;
+    border: 2px solid black;
+    background-color: var(--tertiary-bg-color);
+  }
+
+  .cta {
+    font-size: 2em;
+  }
+}
